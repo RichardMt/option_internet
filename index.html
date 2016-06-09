@@ -2,10 +2,37 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Pygmalion</title>
-    </head>
+        <title>Resultat des concours de culturisme </title>
 
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style>
+		img {width:360px; margin: 50px; transform:rotateZ(5deg);transition: all 10s;}
+	</style>
+	<script src="main.js"></script>
+	<script>
+
+		function autre(){
+document.getElementById("image1").style.transform = "rotateZ(1000deg)";
+}
+	</script>
+    </head>
+	<h1> TEST </h1>
     <body>
-    
+    	Recherche par classement 
+	<input id="pays" size=40 ></input>
+	<input id="nom" size=40 ></input>
+	<input id="poids" size=40 ></input>
+	<input id="imc" size=40 ></input>
+	<button name="premierbouton" onclick="adduser();">Ajouter</button>
+	<div id="result"/>
+	
+	<br><br>Recherche par pays</br>
+	<input name="2" size=40  ></input>
+	<button name="premierbouton" >rechercher</button></br>
+	
+	<div>
+		<img id="image1" src="biceps1.jpg" onclick="dostuf2();"/>
+		<img id="image2" src="biceps2.jpg" onclick="dostuff();">
+	</div>
     </body>
 </html>
